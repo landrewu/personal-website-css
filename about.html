@@ -21,7 +21,83 @@
 	</header>
 	<br/>
 	<main>
-
+		<section>
+			<h1>About Me</h1>
+			<p>
+				I was born and raised in Torrance, CA. I graduated from West Torrance High School in 2020, when I then enrolled into UCSD. I'm now currently a senior at UCSD studying Computer Engineering.
+			</p>
+		</section>
+		<section>
+			<h2>Here are my top 3 key principles:</h2>
+			<ol>
+				<li>Passion</li>
+				<li>Teamwork</li>
+				<li>Positivity</li>
+			</ol>
+			<h3>And here's what they mean to me...</h3>
+			<fieldset>
+				<legend>Passion</legend>
+				I'm passionate about everything that I set out to do.
+			</fieldset>
+			<fieldset>
+				<legend>Teamwork</legend>
+				I try to work well with people around me, no matter what the activity.
+			</fieldset>
+			<fieldset>
+				<legend>Positivity</legend>
+				Positivity is more than being happy and cheerful. It's about looking towards the best solution in every situation.
+			</fieldset>
+		</section>
+		<section>
+			<h2>Fun Facts About Me</h2>
+			<table>
+				<caption>
+				  My Favorites
+				</caption>
+				<colgroup>
+				  <col />
+				  <col span="2" class="batman" />
+				  <col span="2" class="flash" />
+				</colgroup>
+				<tr>
+				  <td></td>
+				  <th scope="col">Food</th>
+				  <th scope="col">Color</th>
+				  <th scope="col">Game</th>
+				  <th scope="col">Superhero</th>
+				</tr>
+				<tr>
+				  <th scope="row">Type</th>
+				  <td>Pizza</td>
+				  <td>Red</td>
+				  <td>Legend of Zelda</td>
+				  <td>Iron Man</td>
+				</tr>
+			</table>
+			<hr>
+			Here's my favorite color in a square.<br>
+			<canvas id="myCanvas" width="120" height="120">
+				An alternative text describing what your canvas displays.
+				<script>
+					const canvas = document.getElementById("myCanvas");
+					const ctx = canvas.getContext("2d");
+					ctx.fillStyle = "red";
+					// Add a rectangle at (10, 10) with size 100x100 pixels
+					ctx.fillRect(10, 10, 100, 100);
+				</script>
+			</canvas><br>
+			Here's my favorite color in a circle.<br>
+			<svg width="100" height="100">
+				<circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="red" />
+			  </svg><br>
+			<figure>
+				<figcaption>Here's one of my favorite songs to listen to:</figcaption>
+				<audio controls src="supershy.mp3">
+					<a href="/media/cc0-audio/t-rex-roar.mp3"> Download audio </a>
+				</audio>
+			  </figure>
+			  
+		</section>
 	</main>
 	<br/>
 	<footer>

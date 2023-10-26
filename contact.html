@@ -29,10 +29,38 @@
 			<input type="text" id="lname" ><br><br>
 			<label for="email">Email:</label>
 			<input type="text" id="email" ><br><br>
+			<datalist id="contact-type">
+				<option value="Recruiter"></option>
+				<option value="Professor"></option>
+				<option value="Student"></option>
+				<option value="Other"></option>
+			</datalist>
+			<label for="contact">Contact Type:</label>
+			<input list="contact-type" id="contact" ><br><br>
+			<label for="message-select">Choose a message type:</label>
+			<select id="message-select">
+			<optgroup label="Hiring">
+				<option>Open role</option>
+				<option>Other</option>
+			</optgroup>
+			<optgroup label="Contact">
+				<option>Coffee Chat</option>
+				<option>Advice</option>
+				<option>Other</option>
+			</optgroup>
+			</select><br><br>
 			<label for="story">Message</label><br>
 			<textarea id="story" name="story" rows="10" cols="75"></textarea><br><br>
 			<input type="submit" value="Submit">
-		  </form>
+		</form>
+		<iframe
+			id="resume iframe"
+			title="resume iframe"
+			width="1000"
+			height="1500"
+			src="resume.html">
+		</iframe>
+
 	</main>
 	<br/>
 	<footer>
