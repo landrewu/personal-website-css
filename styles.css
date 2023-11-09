@@ -8,7 +8,8 @@ html {
 	margin: 1.5rem, 0.5rem;
 	padding: 1.5rem, 0.5rem;
 	font-family: "Regular 400", PlayfairDisplay, serif;
-	background-color: var(--background-color, white);
+	background-color: var(--background-color, color(srgb-linear 1 1 1));
+	color: black;
 }
 
 br {
@@ -33,7 +34,7 @@ a#home {
 	background-color: rgb(208, 229, 248);
 }
 
-nav {
+nav:has(a) {
 	text-align: center;
 	background-color: aliceblue;
 }
@@ -48,12 +49,10 @@ nav a {
 	text-decoration: none;
 	font-weight: 100;
 	background-color: azure;
-	transition: transform .2s;
 }
   
 nav a:hover {
 	background-color: #ddd;
-	transform: scale(1.5);
 }
 
 /* main */
@@ -69,6 +68,11 @@ h1 {
 section#intro {
 	text-align: center;
 }
+
+ol {
+	list-style-type: none;
+	padding: 1rem;
+  }
 
 
 /* resume */
@@ -108,6 +112,11 @@ img.socials {
 	width: 10dvw;
 	height: 10dvw;
 	object-fit: contain;
+	transition: transform .2s;
+}
+
+img.socials:hover {
+	transform: scale(1.25);
 }
 
 footer a#backtotop {
@@ -117,5 +126,5 @@ footer a#backtotop {
 	padding: .5rem;
 	font-weight: bold;
 	text-decoration: none;
-	background-color: rgb(208, 229, 248);
+	background-color: color-mix(in srgb, #d3d3d3, aliceblue);
 }
