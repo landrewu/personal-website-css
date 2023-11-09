@@ -8,14 +8,11 @@
 </head>
 <body>
 	<header>
-		<a href="index.html">Andrew Lu</a>
-		<style>
-			nav {color:cyan;}
-		</style>
-		<nav>
+		<a id="home" href="index.html">Andrew Lu</a>
+		<nav name="nav">
 			<a href="about.html">About Me</a>
 			<a href="experience.html">Experience</a>
-			<a href="contact.html"><b>Contact</b></a>
+			<a href="contact.html">Contact</a>
 			<a href="resume.html">Resume</a>
 		</nav>
 	</header>
@@ -53,22 +50,13 @@
 			<textarea id="story" name="story" rows="10" cols="75"></textarea><br><br>
 			<input type="submit" value="Submit">
 		</form>
-		<iframe
-			id="resume iframe"
-			title="resume iframe"
-			width="1000"
-			height="1500"
-			src="resume.html">
-		</iframe>
-
 	</main>
-	<br/>
 	<footer>
-		<a href="#head">Back to Top</a>
-		<ul>
-			<li><a href="https://www.linkedin.com/in/andrew--lu/">LinkedIn</a></li>
-			<li><a href="https://github.com/landrewu">GitHub</a></li>
-		  </ul>
+		<div class="socials">
+			<div><a href="https://www.linkedin.com/in/andrew--lu/"><img class="socials" src="linkedin.png"></a></div>
+			<div><a href="https://github.com/landrewu"><img class="socials" src="github.png"></a></div>
+		</div>
+		<a id="backtotop" href="#top">Back to Top</a>
 	</footer>
 </body>
 </html>
